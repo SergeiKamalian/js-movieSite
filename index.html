@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="videoInfo.css">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="loader.css">
+
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+
+    <title>Innova Movie</title>
+</head>
+
+<body>
+    <div class="loader_div" hidden>
+        <div class="loader">
+            <div class="lds-default">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="nav_container nav_menu">
+                <div class="nav_logo"><img src="img/logo.png" alt=""></div>
+                <ul class="nav_ul">
+                    <li>TOP MOVIES</li>
+                    <li>VIEWED MOVIES</li>
+                    <li>RECOMMEND MOVIES</li>
+                </ul>
+                <button class="search_btn_open">SEARCH</button>
+            </div>
+            <div class="nav_container nav_hidden_search">
+                <div class="search_content">
+                    <input type="text" class="search_input" placeholder="Search movie..">
+                    <button class="search_btn">SEARCH</button>
+                </div>
+            </div>
+        </nav>
+
+
+        <main class="main_all">
+            <!-- ========================= TOP  =========================-->
+
+            <main class="main_item main_top">
+                <div class="main_title">
+                    <div class="title_info">
+                        <span class="main_info_title">TOP MOVIES</span>
+                        <div class="slider_main">
+                            <div class="slider_left"><i class='bx bx-chevron-left'></i></div>
+                            <div class="slider_right"><i class='bx bx-chevron-right'></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_container">
+                    <div class="cards">
+                        <div class="cards_slider">
+                            <div class="cards_slider_items">
+
+                                <!-- <div class="card">
+                                    <div class="card_img" style="background-image: url(img/movie.jpg)">
+                                        <div class="watch"><i class='bx bx-play-circle'></i></div>
+                                    </div>
+                                    <span class="card_title">Ijevan and azatamut</span>
+                                    <span class="card_country">Armenia, 2010</span>
+                                    <div class="stars">
+                                        <i class='bx bxs-star'></i>
+                                        <span>8.4</span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- ========================= VIEWED  =========================-->
+            <main class="main_item main_viewed">
+                <div class="main_title">
+                    <div class="title_info">
+                        <span class="main_info_title">VIEWED MOVIES</span>
+                        <span class="view_all">View All</span>
+                    </div>
+                </div>
+                <div class="main_container">
+                    <div class="viewed_cards">
+                        <div class="card small_card">
+                            <div class="card_img small_card_img" style="background-image: url(img/movie.jpg)">
+                                <div class="watch small_watch"><i class='bx bx-play-circle'></i></div>
+                            </div>
+                            <span class="card_title small_card_title">Ijevan and azatamut</span>
+                            <span class="card_country small_card_country">Armenia, 2010</span>
+                            <div class="stars small_card_stars">
+                                <i class='bx bxs-star'></i>
+                                <span>8.4</span>
+                            </div>
+                        </div>
+                        <div class="card small_card">
+                            <div class="card_img small_card_img" style="background-image: url(img/movie.jpg)">
+                                <div class="watch small_watch"><i class='bx bx-play-circle'></i></div>
+                            </div>
+                            <span class="card_title small_card_title">Ijevan and azatamut</span>
+                            <span class="card_country small_card_country">Armenia, 2010</span>
+                            <div class="stars small_card_stars">
+                                <i class='bx bxs-star'></i>
+                                <span>8.4</span>
+                            </div>
+                        </div>
+                        <div class="card small_card">
+                            <div class="card_img small_card_img" style="background-image: url(img/movie.jpg)">
+                                <div class="watch small_watch"><i class='bx bx-play-circle'></i></div>
+                            </div>
+                            <span class="card_title small_card_title">Ijevan and azatamut</span>
+                            <span class="card_country small_card_country">Armenia, 2010</span>
+                            <div class="stars small_card_stars">
+                                <i class='bx bxs-star'></i>
+                                <span>8.4</span>
+                            </div>
+                        </div>
+                        <div class="card small_card">
+                            <div class="card_img small_card_img" style="background-image: url(img/movie.jpg)">
+                                <div class="watch small_watch"><i class='bx bx-play-circle'></i></div>
+                            </div>
+                            <span class="card_title small_card_title">Ijevan and azatamut</span>
+                            <span class="card_country small_card_country">Armenia, 2010</span>
+                            <div class="stars small_card_stars">
+                                <i class='bx bxs-star'></i>
+                                <span>8.4</span>
+                            </div>
+                        </div>
+                        <div class="card small_card">
+                            <div class="card_img small_card_img" style="background-image: url(img/movie.jpg)">
+                                <div class="watch small_watch"><i class='bx bx-play-circle'></i></div>
+                            </div>
+                            <span class="card_title small_card_title">Ijevan and azatamut</span>
+                            <span class="card_country small_card_country">Armenia, 2010</span>
+                            <div class="stars small_card_stars">
+                                <i class='bx bxs-star'></i>
+                                <span>8.4</span>
+                            </div>
+                        </div>
+                        <div class="card small_card">
+                            <div class="card_img small_card_img" style="background-image: url(img/movie.jpg)">
+                                <div class="watch small_watch"><i class='bx bx-play-circle'></i></div>
+                            </div>
+                            <span class="card_title small_card_title">Ijevan and azatamut</span>
+                            <span class="card_country small_card_country">Armenia, 2010</span>
+                            <div class="stars small_card_stars">
+                                <i class='bx bxs-star'></i>
+                                <span>8.4</span>
+                            </div>
+                        </div>
+                        <div class="card small_card">
+                            <div class="card_img small_card_img" style="background-image: url(img/movie.jpg)">
+                                <div class="watch small_watch"><i class='bx bx-play-circle'></i></div>
+                            </div>
+                            <span class="card_title small_card_title">Ijevan and azatamut</span>
+                            <span class="card_country small_card_country">Armenia, 2010</span>
+                            <div class="stars small_card_stars">
+                                <i class='bx bxs-star'></i>
+                                <span>8.4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- ========================= RECOMMEND  =========================-->
+
+            <main class="main_item main_recommend">
+                <div class="main_title">
+                    <div class="title_info">
+                        <span class="main_info_title">RECOMMEND MOVIES</span>
+                    </div>
+                </div>
+                <div class="main_container">
+                    <div class="cards recom_cards">
+                        <div class="card recom_card">
+                            <div class="card_img recom_img" style="background-image: url(img/movie.jpg)">
+                                <div class="watch recom_watch"><i class='bx bx-play-circle'></i></div>
+                            </div>
+                            <div class="recom_info">
+                                <span class="card_title">Ijevan and azatamut</span>
+                                <span class="card_country">Armenia, 2010</span>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <span>8.4</span>
+                                </div>
+                                <span class="card_infoWiki">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis animi laudantium
+                                    ratione
+                                    impedit, fugit reprehenderit magni, quaerat doloremque mollitia nobis distinctio.
+                                    Aperiam error optio officia expedita sed cupiditate distinctio consequuntur totam
+                                    deserunt tenetur aliquid cumque delectus iste quos commodi quo, magnam veritatis
+                                    fugit
+                                    quasi odio repudiandae ipsum, excepturi nihil! Itaque.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card recom_card">
+                            <div class="card_img recom_img" style="background-image: url(img/movie.jpg)">
+                                <div class="watch recom_watch"><i class='bx bx-play-circle'></i></div>
+                            </div>
+                            <div class="recom_info">
+                                <span class="card_title">Ijevan and azatamut</span>
+                                <span class="card_country">Armenia, 2010</span>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <span>8.4</span>
+                                </div>
+                                <span class="card_infoWiki">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis animi laudantium
+                                    ratione
+                                    impedit, fugit reprehenderit magni, quaerat doloremque mollitia nobis distinctio.
+                                    Aperiam error optio officia expedita sed cupiditate distinctio consequuntur totam
+                                    deserunt tenetur aliquid cumque delectus iste quos commodi quo, magnam veritatis
+                                    fugit
+                                    quasi odio repudiandae ipsum, excepturi nihil! Itaque.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card recom_card">
+                            <div class="card_img recom_img" style="background-image: url(img/movie.jpg)">
+                                <div class="watch recom_watch"><i class='bx bx-play-circle'></i></div>
+                            </div>
+                            <div class="recom_info">
+                                <span class="card_title">Ijevan and azatamut</span>
+                                <span class="card_country">Armenia, 2010</span>
+                                <div class="stars">
+                                    <i class='bx bxs-star'></i>
+                                    <span>8.4</span>
+                                </div>
+                                <span class="card_infoWiki">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis animi laudantium
+                                    ratione
+                                    impedit, fugit reprehenderit magni, quaerat doloremque mollitia nobis distinctio.
+                                    Aperiam error optio officia expedita sed cupiditate distinctio consequuntur totam
+                                    deserunt tenetur aliquid cumque delectus iste quos commodi quo, magnam veritatis
+                                    fugit
+                                    quasi odio repudiandae ipsum, excepturi nihil! Itaque.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </main>
+        <div class="video_info" hidden>
+            <div class="main_container">
+                <div class="video_info_content">
+                    <span class="video_info_title">Ijevan and Azatamut</span>
+                    <div class="video_info_info">
+                        <div class="video_info_img_div">
+                            <div class="card recom_card video_info_card">
+                                <div class="card_img recom_img video_info_img"
+                                    style="background-image: url(img/movie.jpg)">
+
+                                </div>
+                                <div class="recom_info">
+                                    <div class="stars">
+                                        <i class='bx bxs-star'></i>
+                                        <span>8.4</span>
+                                    </div>
+                                    <span class="vid_info_item">Release year: <span
+                                            class="vid_inf_chld">2017</span></span>
+                                    <span class="vid_info_item">Country: <span class="vid_inf_chld">USA</span></span>
+                                    <span class="vid_info_item">Категории: <span class="vid_inf_chld">120
+                                            min</span></span>
+                                    <span class="card_infoWiki">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis animi laudantium
+                                        ratione
+                                        impedit, fugit reprehenderit magni, quaerat doloremque mollitia nobis
+                                        distinctio.
+                                        Aperiam error optio officia expedita sed cupiditate distinctio consequuntur
+                                        totam
+                                        deserunt tenetur aliquid cumque delectus iste quos commodi quo, magnam veritatis
+                                        fugit
+                                        quasi odio repudiandae ipsum, excepturi nihil! Itaque.
+                                    </span>
+                                </div>
+                            </div>
+
+
+                            <video width="600" height="385" controls poster="">
+                                <source src="https://www.youtube.com/watch?v=el1vnmdmKCo" type="video/mp4">
+                            </video>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main_search" hidden>
+            <div class="search_container">
+                <div class="cards_slider">
+                    <span class="search_title">Результаты поиска:</span>
+                    <div class="cards_slider_items search_list">
+
+                        <!-- <div class="card">
+                            <div class="card_img" style="background-image: url(img/movie.jpg)">
+                                <div class="watch"><i class='bx bx-play-circle'></i></div>
+                            </div>
+                            <span class="card_title">Ijevan and azatamut</span>
+                            <span class="card_country">Armenia, 2010</span>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <span>8.4</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="movie_information" hidden>
+            <div class="movie_info_content">
+                <!-- <div class="movie_image_images">
+                    <div class="movie_ava">
+                        <img src="img/movie.jpg" alt="" class="movie_ava_img">
+                    </div> 
+                    <div class="movie_info_imgs_slider">
+                        <img src="" alt="" class="info_slider_img">
+                    </div>
+                </div>
+                <div class="movie_info_text">
+                    <span class="movie_info_title">Дитя тьмы: Первая жертва</span>
+                    <span class="about_movie">О фильме:</span>
+                    <div class="movie_info_item">
+                        <span class="info_item_title">Год производства:</span>
+                        <span class="info_item_info">2021</span>
+                    </div>
+                    <div class="movie_info_item">
+                        <span class="info_item_title">Страна:</span>
+                        <span class="info_item_info">Армения</span>
+                    </div>
+                    <div class="movie_info_item">
+                        <span class="info_item_title">Жанр:</span>
+                        <span class="info_item_info">Детектив, триллер</span>
+                    </div>
+                    <div class="movie_info_item">
+                        <span class="info_item_title">Режиссер:</span>
+                        <span class="info_item_info">Сергей Камалян</span>
+                    </div>
+                    <div class="movie_info_item">
+                        <span class="info_item_title">Начало:</span>
+                        <span class="info_item_info">1999</span>
+                    </div>
+                    <div class="movie_info_item">
+                        <span class="info_item_title">Возраст:</span>
+                        <span class="info_item_info">18+</span>
+                    </div>
+                    <div class="movie_info_item">
+                        <span class="info_item_title">Длительность:</span>
+                        <span class="info_item_info">136 мин.</span>
+                    </div>
+                    <span class="about_movie">Награды:</span>
+                    <div class="awards">
+                        <div class="award">
+                            <div class="award_name">Оскар</div>
+                            <div class="award_year">1999 г.</div>
+                            <div class="award_country">Лос-Анджелес, Калифорния, США</div>
+                        </div>
+                    </div>
+                    
+                    <span class="about_movie">Похожые фильмы:</span>
+                    <div class="similars_movies">
+                        <div class="simi_movies_item">
+                            <div class="simi_movie_img">
+                                <img src="img/movie.jpg" alt="" class="simi_img">
+                            </div>
+                            <span class="simi_title">Дитя тьмы</span>
+                            <span class="simi_stars">
+                                <i class='bx bxs-star'></i>
+                                <span>8.4</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie_stars_actors">
+                    <div class="movie_info_stars">
+                        <i class='bx bxs-star'></i>
+                        <span>8.4</span>
+                    </div>
+                    <span class="countReview">1567 оценок</span>
+                    <div class="actors_title">В главных ролях:</div>
+                    <div class="info_actors">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+
+
+    <footer>
+
+        <div class="line"></div>
+        <div class="footer_info">
+            <span class="rights">All rights reserved</span>
+            <div class="nav_logo"><img src="img/logo.png" alt=""></div>
+            <span class="author">Sergei Kamalian</span>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://cdn.plyr.io/3.7.2/demo.js" crossorigin="anonymous"></script> -->
+    <script src="main.js"></script>
+</body>
+
+</html>
